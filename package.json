@@ -1,0 +1,67 @@
+{
+  "name": "node-command-line-starter",
+  "version": "1.0.0",
+  "description": "Starter to create node-command-line utilities",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{src,__mocks__,bin}/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*js",
+      "!**/node_modules/**",
+      "!bin/**"
+    ],
+    "coverageDirectory": "coverage"
+  },
+  "scripts": {
+    "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.js'",
+    "format:write": "prettier --write '{src,__mocks__,bin}/**/*.js'",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "report:coverage": "npm run test:coverage && codecov",
+    "semantic-release": "semantic-release"
+  },
+  "bin": {
+    "replace-json-property": "./bin/replace-json-property.bin.js",
+    "rjp": "./bin/replace-json-property.bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreuzerk/replace-json-property.git"
+  },
+  "keywords": [
+    "CLI",
+    "Replace",
+    "JSON",
+    "Buildtool"
+  ],
+  "author": "Kevin Kreuzer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kreuzerk/replace-json-property/issues"
+  },
+  "homepage": "https://github.com/kreuzerk/replace-json-property#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "jsonfile": "^5.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.1",
+    "@semantic-release/git": "^7.0.6",
+    "codecov": "^3.1.0",
+    "husky": "^1.2.1",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "semantic-release": "^15.13.1"
+  }
+}
