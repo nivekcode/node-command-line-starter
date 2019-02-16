@@ -10,7 +10,7 @@ const orderTitle =
     '  \\__, |\\___/ \\__,_|_|     \\___/|_|  \\__,_|\\___|_|   \n' +
     '  |___/                                              \n';
 
-function order(food, drink) {
+function placeOrder(food, drink) {
     const foodOrder = `${chalk.green(
         'You ordered the following food: '
     )} ${chalk.blue.bold(food)} \n`;
@@ -18,13 +18,13 @@ function order(food, drink) {
         'You ordered the following drink: '
     )} ${chalk.blue.bold(drink)}`;
 
-    console.log(
-        `${orderTitle} ${boxen(foodOrder + drinkOrder, {
-            padding: 1,
-            margin: 1,
-            borderStyle: 'round'
-        })}`
-    );
+    const order = `${orderTitle} ${boxen(foodOrder + drinkOrder, {
+        padding: 1,
+        margin: 1,
+        borderStyle: 'round'
+    })}`;
+
+    console.log(order);
 }
 
-module.exports = { order };
+module.exports = { placeOrder };
