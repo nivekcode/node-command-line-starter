@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const commander = require('commander');
 const version = require('../package').version;
-const greet = require('../src/greet');
+const waiter = require('../src/waiter');
 
 commander
     .version(version)
@@ -12,6 +12,6 @@ commander
     )
     .action(function(food, drink) {
         const includeWineCard = commander.wineCard;
-        greet.restaurant();
+        waiter.order(food, drink);
     })
     .parse(process.argv);
