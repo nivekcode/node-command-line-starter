@@ -3,11 +3,9 @@ const jsonfile = require('jsonfile');
 
 function writeFile(fileName, order) {
     jsonfile.writeFile(fileName, order, function(err) {
-        if (err) {
-            console.log(chalk.red(err));
-        } else {
-            console.log(chalk.green(`Success`));
-        }
+        err
+            ? console.log(chalk.red(err))
+            : console.log(chalk.green('Order successfully written to file'));
     });
 }
 
