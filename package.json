@@ -31,25 +31,26 @@
     "semantic-release": "semantic-release"
   },
   "bin": {
-    "replace-json-property": "./bin/replace-json-property.bin.js",
-    "rjp": "./bin/replace-json-property.bin.js"
+    "node-command-line-starter": "./bin/order.bin.js",
+    "restaurant": "./bin/order.bin.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kreuzerk/replace-json-property.git"
+    "url": "git+https://github.com/kreuzerk/node-command-line-starter.git"
   },
   "keywords": [
     "CLI",
     "Replace",
     "JSON",
-    "Buildtool"
+    "Buildtool",
+    "Starter"
   ],
   "author": "Kevin Kreuzer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kreuzerk/replace-json-property/issues"
+    "url": "https://github.com/kreuzerk/node-command-line-starter/issues"
   },
-  "homepage": "https://github.com/kreuzerk/replace-json-property#readme",
+  "homepage": "https://github.com/kreuzerk/node-command-line-starter#readme",
   "dependencies": {
     "boxen": "^2.1.0",
     "commander": "^2.19.0",
