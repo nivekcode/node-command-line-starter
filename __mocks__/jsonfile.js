@@ -1,12 +1,12 @@
 'use strict';
 const jsonfile = jest.genMockFromModule('jsonfile');
 
-let throwError;
+let error;
 
-const setup = withError => (throwError = withError);
+const setup = createError => (error = createError);
 
 const writeFile = jest.fn((fileName, order, cb) => {
-    throwError ? cb('Something went wrong') : cb();
+    error ? cb('Something went wrong') : cb();
 });
 jsonfile.setup = setup;
 jsonfile.writeFile = writeFile;
