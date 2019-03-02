@@ -2,7 +2,7 @@
 Progammers are lazy. As soon as we have to do the same task over and over again we start on automizing it.
 Automization is often done in the form of a command line utility.
 
-![node-command-line-starter](https://ibb.co/4mXMxCb)
+[![node-command-line-starter image](https://i.ibb.co/VjzD8bF/nodecommandlinestarter-project-setup-5c7a49.jpg)](https://imgbb.com/)
 
 This starter provides you with all the necessary setup to quickly create your node-command-line utility. Focus on your util and don't loose time with
 the project setup.
