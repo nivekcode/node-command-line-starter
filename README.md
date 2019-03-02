@@ -67,6 +67,35 @@ Enter the required informations. The CLI will do the setup and add the necessary
 To visualize coverage just sign up on https://codecov.io/.
 Go to Settings and copy the token. Add this token as CODECOV_TOKEN to your travis repository settings.
 
+### Merge your feature branch into master
+Use conventional commit messages for your commits. A merge on master
+will then analyze the commits, automatically bump the version, create
+the release assets and then publish the package.
+
+## Play around with the example
+If you are curious about how this example is used, just try it out. Open up a terminal
+and run:
+```
+npx node-command-line-starter pizza beer
+```
+which will output the following:
+```                    _
+  _   _  ___  _   _ _ __    ___  _ __ __| | ___ _ __
+ | | | |/ _ \| | | | '__|  / _ \| '__/ _` |/ _ \ '__|
+ | |_| | (_) | |_| | |    | (_) | | | (_| |  __/ |
+  \__, |\___/ \__,_|_|     \___/|_|  \__,_|\___|_|
+  |___/
+
+   ╭─────────────────────────────────────────────╮
+   │                                             │
+   │   You ordered the following food:  pizza    │
+   │   You ordered the following drink:  beer    │
+   │                                             │
+   ╰─────────────────────────────────────────────╯
+```
+additionally the starter example also allows you to use a -w option followed
+by a filename. In case you do so, your order is written to the file you specified.
+
 
 
 
