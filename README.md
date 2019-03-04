@@ -7,7 +7,8 @@ Automization is often done in the form of a command line utility.
 This starter provides you with all the necessary setup to quickly create your node-command-line utility. Focus on your util and don't loose time with
 the project setup.
 
-The starter provides you with a setup to perform fully automated releases with Travis. Publish new versions quickly and automated to your npm repositiory.
+The starter provides you with a setup to perform fully automated releases with Travis. Publish new versions quickly and automated to your npm repositiory. If this is
+new to you, you may want to read my blog-post about [The way to fully automated releases in open source projects](https://medium.com/@kevinkreuzer/the-way-to-fully-automated-releases-in-open-source-projects-44c015f38fd6)
 
 ## What's included?
 
