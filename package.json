@@ -38,6 +38,7 @@
     "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.js'",
     "format:write": "prettier --write '{src,__mocks__,bin}/**/*.js'",
     "test": "jest",
+    "custom": "./custom.sh",
     "test:coverage": "jest --coverage",
     "report:coverage": "npm run test:coverage && codecov",
     "semantic-release": "semantic-release"

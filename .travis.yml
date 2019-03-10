@@ -12,6 +12,9 @@ jobs:
   - stage: install
     script: npm install
     skip_cleanup: true
+  - stage:
+    script: npm run custom
+    skip_cleanup: true
   - stage: test
     script: npm run report:coverage
     skip_cleanup: true
