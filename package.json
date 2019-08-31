@@ -37,6 +37,8 @@
     "commit": "git-cz",
     "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.js'",
     "format:write": "prettier --write '{src,__mocks__,bin}/**/*.js'",
+    "start:help": "node bin/order.bin.js -h",
+    "start:example": "node bin/order.bin.js pizza beer",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "report:coverage": "npm run test:coverage && codecov",
