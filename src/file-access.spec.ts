@@ -1,5 +1,5 @@
-const jsonfile = require('jsonfile');
-const chalk = require('chalk');
+import jsonfile from 'jsonfile';
+import chalk from 'chalk';
 
 const sut = require('./file-access');
 

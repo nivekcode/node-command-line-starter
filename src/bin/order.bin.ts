@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-const commander = require('commander');
-const version = require('../package').version;
-const waiter = require('../src/waiter');
-const fileAccess = require('../src/file-access');
+import * as packgeJSON from '../../package.json';
+import commander from 'commander';
+import { placeOrder } from '../waiter';
+import { writeFile } from '../file-access';
 
 commander
-    .version(version)
+    .version(packgeJSON.version)
     .arguments('<food> <drink>')
     .option(
         '-w --write <string>',
@@ -13,9 +13,9 @@ commander
     )
     .action(function(food, drink) {
         const fileName = commander.write;
-        waiter.placeOrder(food, drink);
+        placeOrder(food, drink);
         if (fileName) {
-            fileAccess.writeFile(fileName, { food, drink });
+            writeFile(fileName, { food, drink });
         }
     })
     .parse(process.argv);

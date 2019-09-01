@@ -10,18 +10,10 @@
     }
   },
   "lint-staged": {
-    "{src,__mocks__,bin}/**/*.js": [
+    "{src,__mocks__,bin}/**/*.ts": [
       "prettier --write",
       "git add"
     ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*js",
-      "!**/node_modules/**",
-      "!bin/**"
-    ],
-    "coverageDirectory": "coverage"
   },
   "commitlint": {
     "extends": [
@@ -34,19 +26,20 @@
     }
   },
   "scripts": {
+    "build": "tsc",
     "commit": "git-cz",
     "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.js'",
     "format:write": "prettier --write '{src,__mocks__,bin}/**/*.js'",
-    "start:help": "node bin/order.bin.js -h",
-    "start:example": "node bin/order.bin.js pizza beer",
+    "start:help": "ts-node bin/order.bin.ts -h",
+    "start:example": "ts-node bin/order.bin.ts pizza beer",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "report:coverage": "npm run test:coverage && codecov",
     "semantic-release": "semantic-release"
   },
   "bin": {
-    "node-command-line-starter": "./bin/order.bin.js",
-    "restaurant": "./bin/order.bin.js"
+    "node-command-line-starter": "./src/bin/order.bin.js",
+    "restaurant": "./src/bin/order.bin.js"
   },
   "repository": {
     "type": "git",
@@ -76,12 +69,17 @@
     "@commitlint/prompt": "^7.5.0",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.6",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.3",
     "codecov": "^3.1.0",
     "commitizen": "^3.0.5",
     "husky": "^1.2.1",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
-    "semantic-release": "^15.13.3"
+    "semantic-release": "^15.13.3",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
   }
 }
