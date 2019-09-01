@@ -33,6 +33,7 @@
     "start:help": "ts-node bin/order.bin.ts -h",
     "start:example": "ts-node bin/order.bin.ts pizza beer",
     "test": "jest",
+    "bump-version": "rjp package.json version $VERSION",
     "test:coverage": "jest --coverage",
     "report:coverage": "npm run test:coverage && codecov",
     "semantic-release": "semantic-release"
@@ -77,6 +78,7 @@
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
+    "replace-json-property": "^1.4.1",
     "semantic-release": "^15.13.3",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
