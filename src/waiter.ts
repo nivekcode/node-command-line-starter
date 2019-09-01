@@ -1,5 +1,5 @@
-const chalk = require('chalk');
-const boxen = require('boxen');
+import chalk from 'chalk';
+import boxen from 'boxen';
 
 const orderTitle =
     '\n' +
@@ -10,13 +10,13 @@ const orderTitle =
     '  \\__, |\\___/ \\__,_|_|     \\___/|_|  \\__,_|\\___|_|   \n' +
     '  |___/                                              \n';
 
-function placeOrder(food, drink) {
-    const foodOrder = `${chalk.green(
+export function placeOrder(food, drink) {
+    const foodOrder = `${(chalk as any).green(
         'You ordered the following food: '
-    )} ${chalk.blue.bold(food)} \n`;
-    const drinkOrder = `${chalk.green(
+    )} ${(chalk as any).blue.bold(food)} \n`;
+    const drinkOrder = `${(chalk as any).green(
         'You ordered the following drink: '
-    )} ${chalk.blue.bold(drink)}`;
+    )} ${(chalk as any).blue.bold(drink)}`;
 
     const order = `${orderTitle} ${boxen(foodOrder + drinkOrder, {
         padding: 1,
@@ -26,5 +26,3 @@ function placeOrder(food, drink) {
 
     console.log(order);
 }
-
-module.exports = { placeOrder };

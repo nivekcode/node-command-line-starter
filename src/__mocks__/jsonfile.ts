@@ -1,5 +1,5 @@
 'use strict';
-const jsonfile = jest.genMockFromModule('jsonfile');
+const jsonfile = jest.genMockFromModule<any>('jsonfile');
 
 let error;
 

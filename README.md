@@ -12,6 +12,9 @@ new to you, you may want to read my blog-post about [The way to fully automated 
 
 ## What's included?
 
+### Language
+This starter allows you to write your command line util in TypeScript. 💪 
+
 ### Testing
 - [Jest](https://jestjs.io/) - JavaScript Testing Framework
 - Jest configurations to mock third party libaries

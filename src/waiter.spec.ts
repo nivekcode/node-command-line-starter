@@ -1,5 +1,5 @@
-const chalk = require('chalk');
-const sut = require('./waiter');
+import chalk from 'chalk';
+import sut = require('./waiter');
 
 describe('Waiter', () => {
     beforeAll(() => (console.log = jest.fn()));
