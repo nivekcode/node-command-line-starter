@@ -1,5 +1,5 @@
-import * as chalk from 'chalk';
-import * as jsonfile from 'jsonfile';
+import chalk from 'chalk';
+import jsonfile from 'jsonfile';
 
 export function writeFile(fileName, order) {
     jsonfile.writeFile(fileName, order, function(err) {
