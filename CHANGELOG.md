@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/kreuzerk/node-command-line-starter/compare/v1.0.0...v2.0.0) (2019-09-04)
+
+
+### Features
+
+* **typescript:** adjust docs ([5664b92](https://github.com/kreuzerk/node-command-line-starter/commit/5664b92))
+
+
+### BREAKING CHANGES
+
+* **typescript:** Project is now updated to Typescript
+
 # 1.0.0 (2019-02-23)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "node-command-line-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Starter to create node-command-line utilities",
   "main": "index.js",
   "husky": {
