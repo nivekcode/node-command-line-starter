@@ -16,11 +16,7 @@ jobs:
       script: npm run report:coverage
       skip_cleanup: true
     - stage: Build & publish
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npm run build
-          - npx semantic-release
+      script:
+      - npm run build
+      - npx semantic-release
       if: branch = master
