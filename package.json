@@ -28,8 +28,8 @@
   "scripts": {
     "build": "tsc",
     "commit": "git-cz",
-    "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.js'",
-    "format:write": "prettier --write '{src,__mocks__,bin}/**/*.js'",
+    "format:check": "prettier --list-different '{src,__mocks__,bin}/**/*.ts'",
+    "format:write": "prettier --write '{src,__mocks__,bin}/**/*.ts'",
     "start:help": "ts-node bin/order.bin.ts -h",
     "start:example": "ts-node bin/order.bin.ts pizza beer",
     "test": "jest",
