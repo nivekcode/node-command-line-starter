@@ -80,7 +80,7 @@
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "replace-json-property": "^1.4.1",
-    "semantic-release": "^18.0.0",
+    "semantic-release": "^19.0.3",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
